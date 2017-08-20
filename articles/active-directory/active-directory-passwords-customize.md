@@ -25,7 +25,7 @@ IT Professionals looking to deploy self-service password reset can customize the
 
 ## Customize the contact your administrator link
 
-Even if SSPR is not enabled users still a "contact your administrator" link on the password reset portal.  Clicking this link emails your administrators asking for assistance in changing the user's password. This email is sent to the following recipients in the following order:
+Even if SSPR is not enabled users still see a "contact your administrator" link on the password reset portal.  Clicking this link emails your administrators asking for assistance in changing the user's password. This email is sent to the following recipients in the following order:
 
 1. If the **Password administrator** role is assigned, administrators with this role are notified
 2. If no Password administrators are assigned, then administrators with the **User administrator** role are notified
@@ -49,7 +49,7 @@ ADFS Administrators can add a link to their sign-in page using the guidance foun
 
 Using the command that follows on your ADFS server adds a link to the ADFS login page allowing users to enter the self-service password reset workflow directly.
 
-``` Set-ADFSGlobalWebContent -SigninPageDescriptionText "<p><A href=’https://passwordreset.microsoftonline.com’>Can’t access your account?<A/></p>" ```
+``` Set-ADFSGlobalWebContent -SigninPageDescriptionText "<p><a href='https://passwordreset.microsoftonline.com'>Can't access your account?</a></p>" ```
 
 ## Customize the sign-in and access panel look and feel
 
